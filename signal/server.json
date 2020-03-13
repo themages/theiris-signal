@@ -1,0 +1,11 @@
+{
+    "apps": [{
+        "name": "signal",
+        "script": "./index.js",
+        "error_file": "./logs/signal.err.log",
+        "out_file": "./logs/signal.out.log",
+        "instances" : "1",
+        "log_date_format" : "YYYY-MM-DD HH:mm Z",
+        "watch": false
+    }]
+}
