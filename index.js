@@ -32,7 +32,9 @@ wss.on("connection", function connection (ws, request) {
                 let remote = +data.remote;
                 if (code2ws.has(remote)) {
                     ws.sendData("controlled", {remote});
-                    ws.sendRemote = code2ws.get(remote).sendData;
+                    let remoteWS = code2ws.get(remote);
+                    ws.sendRemote = remoteWS.sendData;
+                    remoteWS.sendRemote = ws.sendData;
                     ws.sendRemote("be-controlled", {remote: code});
                 } else {
                     ws.sendError('user not found')
