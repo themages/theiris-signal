@@ -6,7 +6,7 @@
     "scripts": {},
     "keywords": ["websocket-server"],
     "author": "zengxingqi",
-    "license": "ISC",
+    "license": "GPL3.0",
     "dependencies": {
         "ws": "^7.2.1"
     }
