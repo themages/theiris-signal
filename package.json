@@ -3,11 +3,20 @@
     "version": "1.0.0",
     "description": "this is theiris signal",
     "main": "index.js",
+    "dependencies": {
+        "ws": "^7.2.1"
+    },
+    "devDependencies": {},
     "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/themages/theiris-signal.git"
+    },
     "keywords": ["websocket-server"],
     "author": "zengxingqi",
     "license": "GPL3.0",
-    "dependencies": {
-        "ws": "^7.2.1"
-    }
+    "bugs": {
+        "url": "https://github.com/themages/theiris-signal/issues"
+    },
+    "homepage": "https://github.com/themages/theiris-signal#readme"
 }
