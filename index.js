@@ -59,4 +59,4 @@ wss.on("connection", function connection (ws, request) {
     ws._closeTimeout = setTimeout(() => {
         ws.terminate();
     }, 600000);
-})
+});
